@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "test_single_types_plural",
+  "info": {
+    "singularName": "test-single-types-singular",
+    "pluralName": "test-single-types-plural",
+    "displayName": "Test Single Types",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    }
+  }
+}

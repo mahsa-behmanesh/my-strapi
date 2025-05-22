@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_cats_cats",
+  "info": {
+    "displayName": "cats",
+    "icon": "heart"
+  },
+  "options": {},
+  "attributes": {
+    "cat": {
+      "type": "string"
+    }
+  }
+}

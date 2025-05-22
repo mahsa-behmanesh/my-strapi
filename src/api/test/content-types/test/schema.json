@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tests",
+  "info": {
+    "singularName": "test",
+    "pluralName": "tests",
+    "displayName": "test",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "integer"
+    },
+    "test": {
+      "type": "component",
+      "repeatable": true,
+      "component": "test-component.test-components"
+    },
+    "tests": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::test.test",
+      "mappedBy": "test100"
+    },
+    "test100": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::test.test",
+      "inversedBy": "tests"
+    },
+    "BloodType": {
+      "type": "enumeration",
+      "enum": [
+        "A",
+        "B",
+        "O",
+        "AB"
+      ]
+    },
+    "DynamicZone": {
+      "type": "dynamiczone",
+      "components": [
+        "cats.cats",
+        "test-component.test-components"
+      ]
+    }
+  }
+}
