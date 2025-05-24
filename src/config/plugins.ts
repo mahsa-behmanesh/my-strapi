@@ -10,5 +10,13 @@ export default ({ env }) => ({
       },
     },
   },
+  sentry: {
+    enabled: true,
+    config: {
+      // Only set `dsn` property in production
+      dsn: env("NODE_ENV") === "production" ? env("SENTRY_DSN") : null,
+      sendMetadata: true,
+    },
+  },
   // ...
 });
